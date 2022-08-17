@@ -121,7 +121,7 @@
   <data name="pictureBox1.ErrorImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAycAAAF5CAYAAACFslUHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAALL9JREFUeF7t3XvIfOlBH/BCLhs3V2MSTaOmxpSkTTUBTW8qphKlXlJJDWpt2gqC
+        DQAACw0B7QfALAAALL9JREFUeF7t3XvIfOlBH/BCLhs3V2MSTaOmxpSkTTUBTW8qphKlXlJJDWpt2gqC
         0KA0oDUtRqqwRKRNKU1jtbVioXQhpn8YKs2FXZBNYgJdXFbDEgmRxZBNNpAI2WUh+eNtv+++Jzt79jln
         npk5Z85zznw+8CXZ3zvPmTMz533n+Z7LzF+6urp6jYiIiIiIyMJ5TsoJAADA0l6jnAAAAC1QTgAAgCYo
         JwAAQBOUEwAAoAnKCQAA0ATlBAAAaIJyAgAANEE5AQAAmqCcAAAATVBOAACAJignAABAE5QTAACgCcoJ
@@ -318,7 +318,7 @@
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAvUAAAVoCAYAAAAjHSCeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAu
-        IwAALiMBeKU/dgAA/7JJREFUeF7s/Qu4VdWZ5wuXioAbFZCbbGVzk/tVxNsGBSNiEI14jW41oqKCUUBj
+        IgAALiIBquLdkgAA/7JJREFUeF7s/Qu4VdWZ5wuXioAbFZCbbGVzk/tVxNsGBSNiEI14jW41oqKCUUBj
         ULxiYQzRYFCjmBgT1ARzNeRClSZawYSYW6WKStFV1Sdd9fl91d2nvtPndNfTfU71Od1V5Zkvi/Gu35p7
         zLXm2mvtvdfe67+e5zefqsGYY47rHL+BMy9/8MEHHzjJb3HCuwn/LcESDPu/30yYwLxCCCGEEEKIxqD4
         f/zBH+xJCCKfxWbeLIQQQgghhOh9CpfC38RT3stxR7oQIYQQQgghRO9hv9WHZT0v/0+sICGEEEIIIUTv
@@ -2545,34 +2545,10 @@
         AAAAAElFTkSuQmCC
 </value>
   </data>
-  <metadata name="label17.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="L_LABEL_BARRIO.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="E_NOMBRE.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="L_LABEL_DIRECCION.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </metadata>
-  <metadata name="label14.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="E_SERIE.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="label22.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="E_MODELO.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="label23.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="E_MARCA.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="label24.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="serialPort1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
   </metadata>
 </root>

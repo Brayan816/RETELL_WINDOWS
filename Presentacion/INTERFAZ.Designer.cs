@@ -1,6 +1,9 @@
-﻿namespace Presentacion
+﻿using System;
+using System.Windows.Forms;
+
+namespace Presentacion
 {
-    partial class Form2
+    partial class INTERFAZ
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +31,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(INTERFAZ));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -44,10 +47,9 @@
             this.PRIRESTAURAR = new FontAwesome.Sharp.IconButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.iniciaL_PA1 = new Presentacion.INICIAL_PA();
-            this.mantenimientO_PA1 = new Presentacion.MANTENIMIENTO_PA();
             this.notificacioneS_PA1 = new Presentacion.NOTIFICACIONES_PA();
             this.agregaR_PA1 = new Presentacion.AGREGAR_PA();
-            this.equipoS_PA1 = new Presentacion.EQUIPOS_PA();
+            this.equipoS_PA1 = new Presentacion.Llantas();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -69,6 +71,10 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 630);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
+            this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
             // 
             // label2
             // 
@@ -87,6 +93,7 @@
             this.label1.Size = new System.Drawing.Size(46, 13);
             this.label1.TabIndex = 5;
             this.label1.Text = "Usuario:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // iconButton5
             // 
@@ -329,12 +336,7 @@
             // 
             // mantenimientO_PA1
             // 
-            this.mantenimientO_PA1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(38)))), ((int)(((byte)(44)))));
-            this.mantenimientO_PA1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mantenimientO_PA1.Location = new System.Drawing.Point(200, 40);
-            this.mantenimientO_PA1.Name = "mantenimientO_PA1";
-            this.mantenimientO_PA1.Size = new System.Drawing.Size(920, 590);
-            this.mantenimientO_PA1.TabIndex = 6;
+
             // 
             // notificacioneS_PA1
             // 
@@ -373,7 +375,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(38)))), ((int)(((byte)(44)))));
             this.ClientSize = new System.Drawing.Size(1120, 630);
             this.Controls.Add(this.iniciaL_PA1);
-            this.Controls.Add(this.mantenimientO_PA1);
             this.Controls.Add(this.notificacioneS_PA1);
             this.Controls.Add(this.agregaR_PA1);
             this.Controls.Add(this.equipoS_PA1);
@@ -393,6 +394,21 @@
 
         }
 
+        private void iconButton5_Click_1(object sender, EventArgs e)
+        {
+            //throw new NotImplementedException();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            //throw new NotImplementedException();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            //throw new NotImplementedException();
+        }
+
         #endregion
 
         private System.Windows.Forms.Panel panel1;
@@ -406,10 +422,9 @@
         private FontAwesome.Sharp.IconButton PRICERRAR;
         private FontAwesome.Sharp.IconButton PRIRESTAURAR;
         private System.Windows.Forms.Panel panel2;
-        private EQUIPOS_PA equipoS_PA1;
+        private Llantas equipoS_PA1;
         private AGREGAR_PA agregaR_PA1;
         private NOTIFICACIONES_PA notificacioneS_PA1;
-        private MANTENIMIENTO_PA mantenimientO_PA1;
         private INICIAL_PA iniciaL_PA1;
         private System.Windows.Forms.Label label1;
         private FontAwesome.Sharp.IconButton iconButton5;

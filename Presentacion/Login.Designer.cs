@@ -1,6 +1,6 @@
 ﻿namespace Presentacion
 {
-    partial class Form1
+    partial class Login
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
@@ -58,6 +58,9 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(260, 330);
             this.panel1.TabIndex = 1;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
+            this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
             // 
             // pictureBox1
             // 
@@ -110,8 +113,9 @@
             this.inusuario.Name = "inusuario";
             this.inusuario.Size = new System.Drawing.Size(301, 24);
             this.inusuario.TabIndex = 1;
-            this.inusuario.Text = "CORREO";
+            this.inusuario.Text = "USUARIO";
             this.inusuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.inusuario.TextChanged += new System.EventHandler(this.inusuario_TextChanged);
             this.inusuario.Enter += new System.EventHandler(this.inusuario_Enter);
             this.inusuario.Leave += new System.EventHandler(this.inusuario_Leave);
             // 
@@ -155,6 +159,7 @@
             this.button1.Text = "ACCEDER";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.button1_KeyDown);
             // 
             // label1
             // 
@@ -164,7 +169,7 @@
             this.label1.Location = new System.Drawing.Point(485, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(106, 33);
-            this.label1.TabIndex = 7;
+            this.label1.TabIndex = 20;
             this.label1.Text = "LOGIN";
             // 
             // incerrar
@@ -173,7 +178,7 @@
             this.incerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.incerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.incerrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.incerrar.Location = new System.Drawing.Point(752, 3);
+            this.incerrar.Location = new System.Drawing.Point(743, 12);
             this.incerrar.Name = "incerrar";
             this.incerrar.Size = new System.Drawing.Size(25, 25);
             this.incerrar.TabIndex = 4;
@@ -187,7 +192,7 @@
             this.inmini.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.inmini.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.inmini.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.inmini.Location = new System.Drawing.Point(724, 0);
+            this.inmini.Location = new System.Drawing.Point(722, 9);
             this.inmini.Name = "inmini";
             this.inmini.Size = new System.Drawing.Size(25, 25);
             this.inmini.TabIndex = 4;
@@ -280,6 +285,7 @@
             this.Opacity = 0.95D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " LOGIN";
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseUp);
